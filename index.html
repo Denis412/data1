@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./src/css/style.css" />
+
+    <title>Resume form</title>
+  </head>
+  <body>
+    <header class="container header">
+      <h1 class="text-h1">Создание резюме</h1>
+
+      <ul class="header__controls">
+        <li class="header__controls-item">
+          <img src="/assets/images/img.png" alt="avatar" />
+        </li>
+        <li class="header__controls-item logout-item">
+          <img src="/assets/icons/log-out.svg" alt="logout" />
+        </li>
+      </ul>
+    </header>
+    <main class="container main">
+      <form class="resume-form">
+        <div class="resume-form__avatar gutter-y-32">
+          <div class="resume-form__avatar-inner">
+            <img
+              src="/assets/images/avatar.png"
+              alt="avatar"
+              class="resume-form__avatar-img"
+            />
+
+            <button class="icon-btn resume-form__avatar-btn">
+              <img src="/assets/icons/edit.svg" alt="edit avatar" />
+            </button>
+          </div>
+
+          <div class="resume-form__upload text-body3 gutter-x-8">
+            <p>Загрузить резюме</p>
+            <img src="/assets/icons/upload.svg" alt="upload resume" />
+          </div>
+        </div>
+
+        <div class="resume-form__controls">
+          <div class="resume-form__controls-top-section">
+            <label class="gutter-y-4">
+              <div class="flex align-center gutter-x-4">
+                <p class="text-violet8">Фамилия</p>
+                <img src="/assets/icons/star.svg" alt="star" />
+              </div>
+
+              <div class="field__control">
+                <input type="text" placeholder="Фамилия" class="input" />
+              </div>
+            </label>
+
+            <label class="gutter-y-4">
+              <div class="flex align-center gutter-x-4">
+                <p class="text-violet8">Имя</p>
+                <img src="/assets/icons/star.svg" alt="star" />
+              </div>
+
+              <div class="field__control">
+                <input type="text" placeholder="Имя" class="input" />
+              </div>
+            </label>
+
+            <label class="gutter-y-4">
+              <div class="flex align-center gutter-x-4">
+                <p class="text-violet8">Отчество</p>
+              </div>
+
+              <div class="field__control">
+                <input type="text" placeholder="Отчество" class="input" />
+              </div>
+            </label>
+
+            <label class="gutter-y-4">
+              <div class="flex align-center gutter-x-4">
+                <p class="text-violet8">Пол</p>
+              </div>
+
+              <div class="field__control">
+                <input type="text" placeholder="Выберите пол" class="input" />
+                <img
+                  src="/assets/icons/arrow-down.svg"
+                  alt="search"
+                  class="pointer"
+                />
+              </div>
+            </label>
+
+            <label class="gutter-y-4">
+              <div class="flex align-center gutter-x-4">
+                <p class="text-violet8">Дата рождения</p>
+              </div>
+
+              <div class="field__control">
+                <input type="text" placeholder="Выберите" class="input" />
+              </div>
+            </label>
+
+            <label class="gutter-y-4">
+              <div class="flex align-center gutter-x-4">
+                <p class="text-violet8">Гражданство</p>
+              </div>
+
+              <div class="field__control">
+                <input type="text" placeholder="Поиск" class="input" />
+                <img src="/assets/icons/search.svg" alt="search" />
+              </div>
+            </label>
+
+            <label class="gutter-y-4">
+              <div class="flex align-center gutter-x-4">
+                <p class="text-violet8">Дети</p>
+              </div>
+
+              <div class="field__control-checkbox">
+                <input
+                  type="checkbox"
+                  placeholder="Выберите"
+                  class="checkbox"
+                />
+                <span>Есть</span>
+              </div>
+            </label>
+
+            <label class="gutter-y-4">
+              <div class="flex align-center gutter-x-4">
+                <p class="text-violet8">Семейное положение</p>
+              </div>
+
+              <div class="field__control-checkbox">
+                <input type="checkbox" placeholder="Поиск" class="checkbox" />
+                <span>В браке</span>
+              </div>
+            </label>
+          </div>
+
+          <div class="resume-form__controls-bottom-section">
+            <label class="gutter-y-4 first-column-item">
+              <div class="flex align-center gutter-x-4">
+                <p class="text-violet8">Страна</p>
+              </div>
+
+              <div class="field__control">
+                <input type="text" placeholder="Поиск" class="input" />
+                <img src="/assets/icons/search.svg" alt="star" />
+              </div>
+            </label>
+
+            <label class="gutter-y-4 second-column-item">
+              <div class="flex align-center gutter-x-4">
+                <p class="text-violet8">Город</p>
+              </div>
+
+              <div class="field__control">
+                <input type="text" placeholder="Поиск" class="input" />
+                <img src="/assets/icons/search.svg" alt="star" />
+              </div>
+            </label>
+
+            <label class="gutter-y-4 first-column-item">
+              <div class="flex align-center gutter-x-4">
+                <p class="text-violet8">E-mail</p>
+                <img src="/assets/icons/star.svg" alt="star" />
+              </div>
+
+              <div class="field__control">
+                <input type="email" placeholder="Введите email" class="input" />
+              </div>
+            </label>
+
+            <label class="gutter-y-4 second-column-item">
+              <div class="flex align-center gutter-x-4">
+                <p class="text-violet8">Телефон</p>
+                <img src="/assets/icons/star.svg" alt="star" />
+              </div>
+
+              <div class="field__control">
+                <input
+                  type="text"
+                  placeholder="+7 (___) ___-__-__"
+                  class="input"
+                />
+              </div>
+            </label>
+          </div>
+
+          <div class="resume-form__btns">
+            <button class="button button-secondary text-body3">Отменить</button>
+            <button class="button button-primary text-body3">Сохранить</button>
+          </div>
+        </div>
+      </form>
+    </main>
+    <!-- <div id="app"></div> -->
+    <!-- <script type="module" src="/main.js"></script> -->
+  </body>
+</html>
